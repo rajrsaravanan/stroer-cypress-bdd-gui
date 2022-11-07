@@ -1,0 +1,1 @@
+# stroer-cypress-bdd-gui
