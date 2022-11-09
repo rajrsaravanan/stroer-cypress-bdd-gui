@@ -1,6 +1,6 @@
 ## Test Challenge Framework - Cypress.io
 
-    This Cypress Framework allow us to perform API E2E Flow with Conneecters.
+    This Cypress Framework allow us to perform GUI BDD E2E Flow with WebApps.
 
     More info on: https://docs.cypress.io/
 
