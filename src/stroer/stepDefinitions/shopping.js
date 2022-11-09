@@ -37,7 +37,7 @@ Then('Validate the Price of Product for {string} Items', (productCount) => {
     productPrice = $pPrice.text().trim();
     cy.get('span[id="sc-subtotal-amount-activecart"]').then(($pTotal) => {
       productTotal = $pTotal.text().trim();
-      expect(productTotal).to.eq((productPrice * parseInt(productCount)).toFixed(2));
+      expect(productTotal.replace(',', '')).to.eq((productPrice * parseInt(productCount)).toFixed(2));
     });
   });
 });
