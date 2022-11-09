@@ -1,0 +1,41 @@
+{
+  "name": "stroer-cypress-bdd-gui",
+  "version": "1.0.0",
+  "description": "stroer test challenge",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/stroer/stepDefinitions/**/*.js",
+    "lint:fix": "npm run lint --fix",
+    "cypress:runner": "npx cypress open",
+    "cypress:run": "cypress run --reporter mocha-allure-reporter",
+    "cypress:allure": "allure generate allure-results --clean -o allure-report && allure open",
+    "cypress:allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+    "cypress:allure:report": "allure generate allure-results --clean -o allure-report",
+    "cypress:allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
+  },
+  "keywords": [
+    "GUI",
+    "TESTAUTOMATION",
+    "BDD",
+    "CUCUMBER"
+  ],
+  "author": "Saravanan Rajamanickam",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.10.0",
+    "esbuild": "^0.15.13",
+    "eslint": "^8.27.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.10"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.20.0",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}
