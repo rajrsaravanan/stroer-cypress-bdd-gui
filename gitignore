@@ -1,0 +1,6 @@
+node_modules
+cypress/videos
+cypress/downloads
+cypress/e2e
+allure-report
+allure-results
