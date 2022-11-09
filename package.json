@@ -32,9 +32,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.5.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.31.10"
-  },
-  "dependencies": {
+    "eslint-plugin-react": "^7.31.10",
     "allure-commandline": "^2.20.0",
     "mocha-allure-reporter": "^1.4.0"
   }
